@@ -18,7 +18,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
+  }
 
 body {
   font-family: 'Museo Sans Light', sans-serif;
@@ -465,7 +465,7 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-width: 400px;
+    max-width: 260px;
   }
   .offer__description {
     -webkit-box-orient: vertical;
@@ -525,12 +525,19 @@ img {
   margin-top: 66px;
 }
 
+.slider {
+  max-width: 1168px;
+}
+
 .slider__item {
   margin: auto;
+  outline: none;
 }
 
 .slider__image {
   max-width: 370px;
+  display: block;
+  margin: auto;
 }
 
 @media (max-width: 768px) {
@@ -548,8 +555,24 @@ img {
     max-width: 120px;
     margin-top: 36px;
   }
+  .slider__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .slider__image {
     display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     min-width: 246px;
     width: 50%;
     margin-bottom: 3px;
@@ -659,6 +682,8 @@ img {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-right: 0;
+  padding: 0;
 }
 
 @media (max-width: 768px) {
@@ -675,7 +700,7 @@ img {
   }
   .price__subtitle {
     font-size: 14px;
-    max-width: 146px;
+    max-width: 148px;
     margin-top: 30px;
   }
   .price .card__text {

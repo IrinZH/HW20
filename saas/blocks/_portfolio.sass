@@ -20,11 +20,15 @@
     margin-top: 66px
 
 .slider
+  max-width: 1168px
+  
   &__item
     margin: auto
+    outline: none
   &__image
     max-width: 370px
-
+    display: block
+    margin: auto
 @media (max-width: 768px)
   .portfolio
     padding: 55px 0
@@ -39,9 +43,16 @@
       margin-top: 36px
 
   .slider
+    &__item
+      display: flex
+      justify-content: center
     &__image
       display: block
-      min-width: 246px
+      display: flex
+      margin-left: auto
+      margin-right: auto
+      justify-content: center
+      max-width: 246px
       width: 50%
       margin-bottom: 3px
   

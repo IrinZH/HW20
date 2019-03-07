@@ -62,11 +62,11 @@
       background-color: $main-color
       transition: 0.2s
 
-
   &s
     display: flex
     justify-content: space-between
     flex-wrap: wrap
+    
 @media (max-width: 768px)
   .price
     &__title
@@ -78,15 +78,19 @@
       max-width: 246px
     &__subtitle
       font-size: 14px
-      max-width: 146px
+      max-width: 148px
       margin-top: 30px
       
     &__card
     margin-bottom: 26px
-    .card
-      &__text
+  .card
+    &s
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    &__text
         padding: 30px
-      &__title
+    &__title
         font-size: 14px
         margin: 0px auto 9px auto
       &__image
