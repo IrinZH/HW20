@@ -1,0 +1,729 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1170px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    width: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 480px;
+    width: 80%;
+  }
+}
+
+.button {
+  border-radius: 10px;
+  background-color: #ffd200;
+  border: none;
+  outline: none;
+  padding: 18px 29px;
+  height: 49px;
+}
+
+.button:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
+}
+
+.section-title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 16px;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 20px 26px;
+  font-size: 15px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
+}
+
+/*Стили для шапки*/
+.navbar {
+  padding: 10px 0 0 0;
+}
+
+.navbar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+}
+
+.navbar__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 13px;
+  margin-bottom: -4px;
+}
+
+.navbar__button {
+  margin-left: 30px;
+  font-size: 13px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.navbar__phone {
+  display: inline-block;
+  color: #333333;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 8px 0 12px 0;
+    max-height: 79px;
+  }
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__button {
+    font-size: 10px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+    padding: 14px 25px;
+    height: 39px;
+    width: 137px;
+    border-radius: 5px;
+  }
+  .navbar__logo {
+    width: 90px;
+  }
+}
+
+/*Стили для главного экрана*/
+.hero {
+  padding: 15px 0;
+  background-color: #f5f5f5;
+}
+
+.hero-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.hero-image {
+  max-width: 720px;
+  margin-right: -5px;
+  margin-left: 20px;
+}
+
+.hero-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-right: 0px;
+}
+
+.hero-text__title {
+  font-size: 41px;
+  line-height: 55px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-left: -1px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.hero-text__subtitle {
+  display: inline-block;
+  font-size: 20px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  margin-bottom: 62px;
+  margin-left: 1px;
+}
+
+.hero-list {
+  margin: 0;
+  padding: 5px 95px 0 0;
+  line-height: 24px;
+}
+
+.hero-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+  font-size: 14px;
+  max-width: 310px;
+}
+
+.hero-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.hero-list__image {
+  min-width: 40px;
+  min-height: 40px;
+  border: 2px solid #ffd200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin-right: 28px;
+}
+
+@media (max-width: 1200px) {
+  .hero-image {
+    max-width: 574px;
+    margin: auto;
+    padding: 0;
+  }
+  .hero-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-list {
+    margin-bottom: 44px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 18px 0 0 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .hero-image {
+    max-width: 285px;
+    margin-left: 0;
+    padding: 0;
+    margin-top: -3px;
+  }
+  .hero-text__title {
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 6px;
+    margin-top: -15px;
+  }
+  .hero-text__subtitle {
+    font-size: 16px;
+    margin-bottom: 26px;
+    max-width: 198px;
+  }
+  .hero-list {
+    padding-right: 0px;
+    min-width: 200px;
+    line-height: 16px;
+  }
+  .hero-list__item {
+    margin-bottom: 26px;
+    font-size: 12px;
+    margin-left: -2px;
+  }
+  .hero-list__text {
+    min-width: 220px;
+  }
+  .hero-list__image {
+    margin-right: 19px;
+    margin-top: -4px;
+  }
+}
+
+/*Стили для блока оффер*/
+.offer {
+  background: url("../img/offer/offer-bg.png") no-repeat;
+  background-position: center right;
+  background-size: contain;
+  position: relative;
+  padding: 70px 0 100px 0;
+}
+
+.offer:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: -0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+.offer__title {
+  max-width: 360px;
+  line-height: 35px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-left: 0;
+  text-align: left;
+}
+
+.offer__subtitle {
+  max-width: 250px;
+  margin-bottom: 34px;
+  display: block;
+}
+
+.offer__input {
+  margin-bottom: 31px;
+  width: 238px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  min-height: 70px;
+  font-size: 16px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.offer-blockdesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 490px;
+}
+
+.offer__description {
+  display: block;
+  margin-top: 30px;
+  height: 40px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.offer__description:last-child {
+  margin-left: 50px;
+}
+
+.offer__phone {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  color: #333333;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer-blockdesc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 400px;
+  }
+  .offer__description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+  }
+  .offer__description:last-child {
+    margin-left: 0;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__input__button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: #ffffff;
+    padding: 26px 0 40px 0;
+  }
+  .offer-block {
+    width: 100%;
+    padding: 0 0;
+    margin-bottom: 0;
+  }
+  .offer__title {
+    max-width: 260px;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 18px;
+  }
+  .offer__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .offer-blockdesc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 400px;
+  }
+  .offer__description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .offer__description:last-child {
+    margin-left: 0;
+    margin-top: 14px;
+    margin-bottom: 2px;
+  }
+  .offer__input {
+    width: 275px;
+  }
+  .offer__button {
+    margin-top: 5px;
+    font-size: 14px;
+    padding: 18px 61px;
+    width: 275px;
+  }
+}
+
+/*Стили для блока портфолио*/
+.portfolio {
+  padding: 85px 0 100px 0;
+  background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  max-width: 790px;
+  margin: auto;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  color: #333333;
+  font-size: 30px;
+  line-height: 45px;
+  padding-top: 0px;
+  margin-bottom: 94px;
+  text-align: center;
+}
+
+.portfolio__arrows {
+  max-width: 124px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  margin-top: 66px;
+}
+
+.slider__item {
+  margin: auto;
+}
+
+.slider__image {
+  max-width: 370px;
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 55px 0;
+  }
+  .portfolio__title {
+    font-size: 18px;
+    max-width: 280px;
+    line-height: 22px;
+    margin-bottom: 44px;
+    margin-top: 4px;
+  }
+  .portfolio__arrows {
+    max-width: 120px;
+    margin-top: 36px;
+  }
+  .slider__image {
+    display: block;
+    min-width: 246px;
+    width: 50%;
+    margin-bottom: 3px;
+  }
+}
+
+/*Стили для блока прайс*/
+.price__title {
+  margin: 96px auto 48px auto;
+  max-width: 515px;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+}
+
+.price__subtitle {
+  margin-bottom: 56px;
+  display: block;
+  max-width: 210px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.price__card {
+  margin-bottom: 36px;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e8e8e8;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card:hover .card__image:before {
+  opacity: 0.8;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.card__text {
+  padding: 35px;
+}
+
+.card__title {
+  margin-top: 3px;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.card__image {
+  position: relative;
+}
+
+.card__image::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd200), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+}
+
+.card__link {
+  display: inline-block;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  color: #333333;
+}
+
+.card__link:hover:after {
+  height: 12px;
+}
+
+.card__link:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: -4px;
+  left: 0;
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: #ffd200;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .price {
+    margin-bottom: 26px;
+  }
+  .price__title {
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    line-height: 20px;
+    max-width: 246px;
+  }
+  .price__subtitle {
+    font-size: 14px;
+    max-width: 146px;
+    margin-top: 30px;
+  }
+  .price .card__text {
+    padding: 30px;
+  }
+  .price .card__title {
+    font-size: 14px;
+    margin: 0px auto 9px auto;
+  }
+  .price .card__image {
+    max-width: 271px;
+    margin: auto;
+  }
+}
+
+/*Стили для модального окна*/
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  max-width: 450px;
+  width: 90%;
+  min-width: 200px;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.modal-dialog__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/*# sourceMappingURL=style.css.map */
